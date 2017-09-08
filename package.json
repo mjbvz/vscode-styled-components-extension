@@ -1,0 +1,44 @@
+{
+  "name": "vscode-vscode-css-template-strings-prototype",
+  "private": true,
+  "displayName": "JS/TS css template string prototype",
+  "description": "Prototype syntax highlighting and intellisense for css inside JS/TS template strings",
+  "version": "0.0.1",
+  "publisher": "bierner",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/mjbvz/vscode-js-template-string-grammar-injection-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjbvz/vscode-js-template-string-grammar-injection-example/issues"
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "meta.embedded.css.string.template",
+        "path": "./syntaxes/injection.json",
+        "injectTo": [
+          "source.js",
+          "source.jsx",
+          "source.ts",
+          "source.tsx"
+        ]
+      }
+    ],
+    "typescriptServerPlugins": [
+      {
+        "name": "ts-css-plugin"
+      }
+    ]
+  },
+  "dependencies": {
+    "ts-css-plugin": "https://github.com/mjbvz/ts-css-plugin",
+    "typescript": "^2.5.2"
+  }
+}

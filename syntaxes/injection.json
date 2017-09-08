@@ -1,0 +1,51 @@
+{
+	"fileTypes": [],
+	"injectionSelector": "string.template.tsx, string.template.ts, string.template.js, string.template.jsx",
+	"patterns": [
+		{
+			"include": "#css-tagged-template"
+		},
+		{
+			"include": "#leading-css-element-template"
+		}
+	],
+	"repository": {
+		"css-tagged-template": {
+			"begin": "(?<=css`)",
+			"end": "(?=`)",
+			"contentName": "meta.embedded.css",			
+			"patterns": [
+				{
+					"include": "#css-template-body"
+				}
+			]
+		},
+		"leading-css-element-template": {
+			"begin": "(?<=`)(?=<)",
+			"end": "(?=`)",
+			"contentName": "meta.embedded.css",
+			"patterns": [
+				{
+					"include": "#css-template-body"
+				}
+			]
+		},
+		"css-template-body": {
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.css"
+				},
+				{
+					"include": "#noop"
+				}
+			]
+		},
+		"noop": {
+			"match": "."
+		}
+	},
+	"scopeName": "meta.embedded.css.string.template"
+}
