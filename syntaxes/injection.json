@@ -11,7 +11,7 @@
 	],
 	"repository": {
 		"css-tagged-template": {
-			"begin": "(?<=css`)",
+			"begin": "(?<=styled`)",
 			"end": "(?=`)",
 			"contentName": "meta.embedded.css",			
 			"patterns": [

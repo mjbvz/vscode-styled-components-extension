@@ -1,5 +1,5 @@
-# VS Code Prototype Embedded CSS template string suport
+# VS Code styled component extension (Prototype)
 
-Prototype of how an extension can contribute support for a language embedded within JavaScript / TypeScript template strings. Demonstrates adding basic css template string syntax highlighting and intellisense.
- 
- ![](/docs/example.png)
+Prototype contribute support for a language embedded within JavaScript / TypeScript template strings. Demonstrates adding basic styled component template string syntax highlighting and intellisense.
+
+![](/docs/example.png)
