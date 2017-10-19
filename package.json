@@ -26,8 +26,7 @@
     ]
   },
   "dependencies": {
-    "typescript-styled-plugin": "*",
-    "typescript-template-string-language-service-adapter": "git+https://github.com/mjbvz/typescript-template-language-service-decorator.git"
+    "typescript-styled-plugin": "*"
   },
   "extensionDependencies": [
     "vscode-styled-components"
