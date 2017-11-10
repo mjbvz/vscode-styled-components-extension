@@ -26,7 +26,7 @@
     ]
   },
   "dependencies": {
-    "typescript-styled-plugin": "*"
+    "typescript-styled-plugin": "^0.2.0"
   },
   "extensionDependencies": [
     "vscode-styled-components"
